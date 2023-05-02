@@ -13,6 +13,7 @@ import Blog from './components/Blog/Blog';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
+import AuthProvider from './components/Provider/AuthProvider';
 
 
 const router = createBrowserRouter([
@@ -43,6 +44,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <AuthProvider>
     <RouterProvider router={router}></RouterProvider>
+    </AuthProvider>
   </React.StrictMode>,
 )
