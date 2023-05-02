@@ -1,9 +1,16 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
+import NavBar from '../NavBar/NavBar';
+import Footer from '../Footer/Footer';
+import Banner from '../Banner/Banner';
 
 const Home = () => {
     return (
         <div>
-            <h2>This is a home page</h2>
+            <NavBar></NavBar>
+            <Banner></Banner>
+            <Outlet></Outlet>
+            <Footer></Footer>
             
         </div>
     );
