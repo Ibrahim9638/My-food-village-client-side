@@ -11,16 +11,16 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Link to="/" className="text-decoration-none px-4 fw-bold text-black ">
+            <Link to="/" className="text-decoration-none px-4 fw-bold text-black fs-5 ">
               Home
             </Link>
-            <Link to="/blog" className="text-decoration-none px-2 fw-bold text-black">
+            <Link to="/blog" className="text-decoration-none px-2 fw-bold text-black fs-5">
               Blog
             </Link>
           </Nav>
           <Nav>
             <Link to="/login">
-              <Button variant="dark">Login</Button>
+              <Button variant="dark" className="fs-6">Login</Button>
             </Link>
           </Nav>
         </Navbar.Collapse>
