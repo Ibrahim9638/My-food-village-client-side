@@ -11,6 +11,8 @@ import Home from './components/Home/Home.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Blog from './components/Blog/Blog';
 import ErrorPage from './components/ErrorPage/ErrorPage';
+import Login from './components/Login/Login';
+import Register from './components/Register/Register';
 
 
 const router = createBrowserRouter([
@@ -26,6 +28,14 @@ const router = createBrowserRouter([
       {
         path: 'blog',
         element: <Blog></Blog>
+      },
+      {
+        path: 'login',
+        element: <Login></Login>
+      },
+      {
+        path: '/register',
+        element: <Register></Register>
       }
     ]
   }

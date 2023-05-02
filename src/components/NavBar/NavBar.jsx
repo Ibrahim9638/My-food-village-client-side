@@ -20,7 +20,7 @@ const NavBar = () => {
           </Nav>
           <Nav>
             <Link to="/login">
-              <Button variant="dark" className="fs-6">Login</Button>
+              <Button variant="dark" className="fs-6" size="lg">Login</Button>
             </Link>
           </Nav>
         </Navbar.Collapse>
