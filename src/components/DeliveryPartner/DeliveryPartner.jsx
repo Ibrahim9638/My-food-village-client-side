@@ -35,7 +35,11 @@ const DeliveryPartner = () => {
           </Col>
           <Col>
             <Card className="h-75">
-              <Card.Img variant="top" src={delivery2} className="h-75 text-center" />
+              <Card.Img
+                variant="top"
+                src={delivery2}
+                className="h-75 text-center"
+              />
             </Card>
             <h4
               style={{
@@ -49,7 +53,11 @@ const DeliveryPartner = () => {
           </Col>
           <Col>
             <Card className="h-75">
-              <Card.Img variant="top" src={delivery3} className="h-100 text-center" />
+              <Card.Img
+                variant="top"
+                src={delivery3}
+                className="h-100 text-center"
+              />
             </Card>
             <h4
               style={{
