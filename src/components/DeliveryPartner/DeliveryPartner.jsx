@@ -9,7 +9,7 @@ const DeliveryPartner = () => {
     <div className="pb-5 pt-5" style={{ backgroundColor: "rgb(255 247 237)" }}>
       <Container>
         <h2
-          className="text-center fw-bold"
+          className="text-center fw-bold mb-4"
           style={{
             textShadow: "rgb(240, 0, 0) -1px 1px 1px",
             fontSize: "40px",
@@ -18,32 +18,50 @@ const DeliveryPartner = () => {
           Your Favourite Food <br />
           Delivery Partner
         </h2>
-        <Row className="g-4">
-          <Col sm={4}>
-            <div >
-              <img src={delivery1} alt="" style={{height:"220px", width:"260px"}} className="rounded" />
-            
-              <h4  style={{textShadow:'rgb(240, 0, 0) -1px 1px 0px', fontSize: '25px', marginLeft:"36px", marginTop:"10px"}}>Easy To Order</h4>
-            </div>
+        <Row xs={1} md={2} lg={3} className="g-4">
+          <Col>
+            <Card className="h-75">
+              <Card.Img variant="top" src={delivery1} className="h-75 " />
+            </Card>
+            <h4
+              style={{
+                textShadow: "rgb(240, 0, 0) -1px 1px 0px",
+                fontSize: "30px",
+              }}
+              className="text-center mt-3"
+            >
+              Easy To Order
+            </h4>
           </Col>
-          <Col sm={4}>
-            <div>
-              <img src={delivery2} alt="" style={{height:"220px", width:"260px"}} className="rounded"/>
-              <h4 style={{textShadow:'rgb(240, 0, 0) -1px 1px 0px', fontSize: '25px', marginLeft:"36px", marginTop:"10px"}}>Fastest Delivery</h4>
-            </div>
+          <Col>
+            <Card className="h-75">
+              <Card.Img variant="top" src={delivery2} className="h-75 text-center" />
+            </Card>
+            <h4
+              style={{
+                textShadow: "rgb(240, 0, 0) -1px 1px 0px",
+                fontSize: "30px",
+              }}
+              className="text-center mt-3"
+            >
+              Fastest Delivery
+            </h4>
           </Col>
-          <Col sm={4}>
-            <div>
-              <img src={delivery3} alt="" style={{height:"220px", width:"260px"}} className="  rounded" />
-              <h4 style={{textShadow:'rgb(240, 0, 0) -1px 1px 0px', fontSize: '25px', marginLeft:"36px", marginTop:"10px"}}>Best Quality</h4>
-            </div>
+          <Col>
+            <Card className="h-75">
+              <Card.Img variant="top" src={delivery3} className="h-100 text-center" />
+            </Card>
+            <h4
+              style={{
+                textShadow: "rgb(240, 0, 0) -1px 1px 0px",
+                fontSize: "25px",
+              }}
+              className="text-center mt-3"
+            >
+              Best Quality
+            </h4>
           </Col>
         </Row>
-
-
-
-
-        
       </Container>
     </div>
   );
