@@ -14,7 +14,7 @@ const Banner = () => {
                     style={{textShadow:'rgb(240, 0, 0) -1px 1px 1px', fontSize: '53px'}}>
                     Fun and Easy 
                     <br /> Join us for  
-                    <br /> Master chef cooking
+                    <br /> Master chef Bengali Food
                     </h1> 
                 </Card.Title>
                 <Card.Text >

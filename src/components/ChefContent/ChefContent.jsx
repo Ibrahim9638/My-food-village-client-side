@@ -1,9 +1,9 @@
 import React from "react";
-import { Button, Card, Col, Row } from "react-bootstrap";
+import { Card, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const ChefContent = ({ chef }) => {
-  const { id, chefName, yearsOfExperience, numberOfRecipes, likes, img_url } =
+  const { id, chefName, yearsOfExperience, likes, img_url, numberOfRecipes } =
     chef;
 
   return (
@@ -11,11 +11,15 @@ const ChefContent = ({ chef }) => {
       <Card className="h-100">
         <Card.Img variant="top" src={img_url} style={{ height: "280px" }} />
         <Card.Body>
-          <Card.Title>Name: {chefName}</Card.Title>
-          <Card.Text>Years of experience: {yearsOfExperience}</Card.Text>
+          <Card.Title> <b style={{textShadow:'rgb(240, 0, 0) 0px 0px 0px', fontSize: '16px'}}>Name: {chefName}</b></Card.Title>
+          <Card.Text>Years of experience: <b>{yearsOfExperience}</b></Card.Text>
           <Card.Text>
-            <p className="m-0">Numbers of recipes: {yearsOfExperience}</p>
+            <p className="m-0">Numbers of recipes: <b>{numberOfRecipes}</b></p>
           </Card.Text>
+          <Card.Text>
+            <p className="m-0">Likes: <b>{likes}</b></p>
+          </Card.Text>
+
           <Link className="btn btn-dark text-white" to={`recipe/ ${id}`}>View Recipes</Link>
         </Card.Body>
       </Card>

@@ -4,6 +4,7 @@ import NavBar from '../NavBar/NavBar';
 import Footer from '../Footer/Footer';
 import Banner from '../Banner/Banner';
 import Chef from '../Chef/Chef';
+import DeliveryPartner from '../DeliveryPartner/DeliveryPartner';
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <Banner></Banner>
             <Chef></Chef>
             <Outlet></Outlet>
+            <DeliveryPartner></DeliveryPartner>
             <Footer></Footer>
             
         </div>
