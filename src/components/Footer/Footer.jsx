@@ -13,6 +13,7 @@ const Footer = () => {
   return (
     <footer className="footer-distributed">
       <Container>
+        
         <div className="footer-left">
           <h3>
             The<span>Food Village</span>
